@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Speed Click Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+  <h1>⚡ Speed Click Challenge</h1>
+
+  <div class="layout">
+
+  <div class="panel">
+  <div class="stats">
+  <div class="card">Temps<span id="time">10</span></div>
+  <div class="card">Score<span id="score">0</span></div>
+  <div class="card">Record<span id="best">0</span></div>
+  </div>
+
+  <input id="playerName" placeholder="Votre prénom">
+  <button id="startBtn">🚀 Commencer</button>
+
+  <div id="winner">Aucun gagnant</div>
+    <h2>🏆 Classement</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Joueur</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="ranking"></tbody>
+    </table>
+
+  </div>
+
+  <div class="panel">
+    <div id="gameArea">
+      <button id="target">🎯</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
