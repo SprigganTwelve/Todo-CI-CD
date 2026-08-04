@@ -22,12 +22,21 @@ function moveTarget() {
   target.style.top = Math.random() * maxY + "px";
 }
 
+
+function incrementScore() {
+  score++;
+  scoreElement.textContent = score;
+}
+
+function resetGame() {
+  score = 0;
+  scoreElement.textContent = "0";
+}
+
 target.addEventListener("click", () => {
   if (!playing) return;
 
-  score++;
-  scoreElement.textContent = score;
-
+  incrementScore()
   moveTarget();
 });
 
@@ -118,3 +127,14 @@ function displayRanking() {
 }
 
 displayRanking();
+
+
+if(typeof module !== undefined){
+    module.exports = {
+        moveTarget,
+        finishGame,
+        resetGame,
+        incrementScore,
+        displayRanking
+    }
+}
