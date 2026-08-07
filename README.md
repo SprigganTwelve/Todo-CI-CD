@@ -3,9 +3,7 @@
 # ClickFast
 
 This project focuses on developing a web-based mouse-click game.
-
 The application calculates and assigns a score to each user based on the number of clicks they make on a target during a game session.
-
 The system supports multiple consecutive game sessions and automatically organizes and maintains the corresponding scores.
 
 Running the Application with Docker
